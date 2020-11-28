@@ -1,0 +1,120 @@
+body{
+  background-image:url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+  background-position: right top, left bottom ;
+  background-repeat: no-repeat;
+  background-color: #f7f7ff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: hsl(232, 13%, 33%);
+  font-weight: 700;
+}
+#container{
+  justify-content: center;
+  height: 70%;
+  margin-top: 3%;
+}
+h1{
+  font-size: 4em;
+}
+h1 span{
+  font-size: 0.5em;
+  font-weight: bolder;
+  vertical-align:30%;
+  margin-right: 2px;
+}
+#headeing{
+  border: solid 2px red;
+  margin-top: 3%;
+  font-weight: bolder;
+}
+#select{
+  color: hsl(234, 14%, 74%)
+}
+#packages{
+  /*width: 100%;*/
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+.card{
+/*  width: 20%;*/
+  background: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  height: auto;
+  margin: 3% 1px 3% 0;
+  min-width: 300px;
+}
+.activePackage:hover{
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  margin: 2% 0 2% 0;
+  padding-top: 1.5%;
+}
+.activePackage:hover button{
+  background: white;
+  color: hsl(233, 13%, 49%);
+}
+hr{
+  border: 1px solid hsl(240, 78%, 98%);
+  width: 80%;
+  font-size: 2em;
+}
+button{
+  border: 1px solid rgb(148,156,234);
+  border-radius: 5px;
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  padding: 10px 0 10px 0;
+  width: 80%;
+  margin: 5px 0 15px 0;
+  font-weight: bold;
+}
+
+#switch{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+  vertical-align: middle;
+}
+/* Hide radio button */
+#switch input{
+  display: none;
+}
+#slider{
+  position: absolute;
+  cursor: pointer;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(234, 14%, 74%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+#slider:after{
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  height: 20px;
+  width: 20px;
+  right: 4px;
+  bottom: 4px;
+  background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+input:checked + #slider {
+  background:linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+input:checked + #slider:after {
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
