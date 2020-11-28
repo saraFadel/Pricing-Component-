@@ -36,7 +36,7 @@ h1 span{
    display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px 0 10px 0;
+  margin: 5px 0 5px 0;
 }
 .card{
 /*  width: 20%;*/
@@ -46,13 +46,13 @@ h1 span{
   padding: 10px 30px 10px 30px;
   cursor: pointer;
   height: auto;
-  margin: 3% 1px 3% 0;
+  margin: 2% 1px 3% 0;
   min-width: 300px;
 }
 .activePackage:hover{
   background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
-  margin: 2% 0 2% 0;
+  margin: 1% 0 2% 0;
   padding-top: 1.5%;
 }
 .activePackage:hover button{
