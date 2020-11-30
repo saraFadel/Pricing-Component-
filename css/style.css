@@ -7,7 +7,6 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: hsl(232, 13%, 33%);
-  font-weight: 700;
 }
 #container{
   justify-content: center;
@@ -16,6 +15,7 @@ body{
 }
 h1{
   font-size: 4em;
+  font-weight: bolder;
 }
 h1 span{
   font-size: 0.5em;
@@ -23,58 +23,14 @@ h1 span{
   vertical-align:30%;
   margin-right: 2px;
 }
-#headeing{
-  border: solid 2px red;
+#heading{
   margin-top: 3%;
+  font-size: 2em;
   font-weight: bolder;
 }
 #select{
   color: hsl(234, 14%, 74%)
 }
-#packages{
-  /*width: 100%;*/
-   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px 0 10px 0;
-}
-.card{
-/*  width: 20%;*/
-  background: #fff;
-  border-radius: 10px;
-  font-size: 15px;
-  padding: 10px 30px 10px 30px;
-  cursor: pointer;
-  height: auto;
-  margin: 3% 1px 3% 0;
-  min-width: 300px;
-}
-.activePackage:hover{
-  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  color: white;
-  margin: 2% 0 2% 0;
-  padding-top: 1.5%;
-}
-.activePackage:hover button{
-  background: white;
-  color: hsl(233, 13%, 49%);
-}
-hr{
-  border: 1px solid hsl(240, 78%, 98%);
-  width: 80%;
-  font-size: 2em;
-}
-button{
-  border: 1px solid rgb(148,156,234);
-  border-radius: 5px;
-  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  color: #fff;
-  padding: 10px 0 10px 0;
-  width: 80%;
-  margin: 5px 0 15px 0;
-  font-weight: bold;
-}
-
 #switch{
   position: relative;
   display: inline-block;
@@ -104,7 +60,7 @@ button{
   content: "";
   height: 20px;
   width: 20px;
-  right: 4px;
+  left: 4px;
   bottom: 4px;
   background-color: white;
  -webkit-transition: .4s;
@@ -114,7 +70,57 @@ input:checked + #slider {
   background:linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 input:checked + #slider:after {
-  -webkit-transform: translateX(-20px);
-  -ms-transform: translateX(-20px);
-  transform: translateX(-20px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+#unChecked{
+  margin-right: 20px;
+}
+#checked{
+  margin-left: 20px;
+}
+#packages{
+  /*width: 100%;*/
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0 5px 0;
+}
+.card{
+/*  width: 20%;*/
+  background: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  height: auto;
+  margin: 3% 1px 3% 0;
+  min-width: 300px;
+  transition: all 0.3s ease-in-out;
+}
+.activePackage:hover{
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  margin: 1% 0 1% 0;
+  padding-top: 1.5%;
+}
+.activePackage:hover button{
+  background: white;
+  color: hsl(233, 13%, 49%);
+}
+hr{
+  border: 1px solid hsl(240, 78%, 98%);
+  width: 80%;
+  font-size: 2em;
+}
+button{
+  border: 1px solid rgb(148,156,234);
+  border-radius: 5px;
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  padding: 10px 0 10px 0;
+  width: 80%;
+  margin: 5px 0 15px 0;
+  font-weight: bold;
 }
