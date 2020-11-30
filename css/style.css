@@ -95,7 +95,7 @@ input:checked + #slider:after {
   padding: 10px 30px 10px 30px;
   cursor: pointer;
   height: auto;
-  margin: 3% 1px 3% 0;
+  margin: 2% 1px 2% 0;
   min-width: 300px;
   transition: all 0.3s ease-in-out;
 }
